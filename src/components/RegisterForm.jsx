@@ -21,7 +21,7 @@ const RegisterForm = ({ setAuthType }) => {
   const onSubmit = async (data) => {
     const { email, password, name } = data;
 
-    const res = await fetch("http://localhost:5000/api/v1/auth/register", {
+    const res = await fetch("https://nodejs-auth-server-tvdz.onrender.com/api/v1/auth/register", {
       method: "post",
       headers: {
         Accept: "application/json",
