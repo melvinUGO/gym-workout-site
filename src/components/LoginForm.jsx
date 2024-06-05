@@ -21,7 +21,7 @@ const LoginForm = ({ setAuthType }) => {
   const onSubmit = async (data) => {
     const { email, password } = data;
 
-    const res = await fetch("http://localhost:5000/api/v1/auth/login", {
+    const res = await fetch("https://nodejs-auth-server-tvdz.onrender.com/api/v1/auth/login", {
       method: "post",
       headers: {
         Accept: "application/json",
